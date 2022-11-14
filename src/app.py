@@ -54,7 +54,7 @@ def add_member():
 @app.route('/member/<int:member_id>', methods=['DELETE'])
 def delete_one_member(member_id):
     member = the_family.delete_member(member_id)
-    return jsonify('Usuario eliminado exitosamente'), 200
+    return jsonify({'done':True}), 200
 
 
 # this only runs if `$ python src/app.py` is executed
