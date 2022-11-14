@@ -10,7 +10,7 @@ app.url_map.strict_slashes = False
 CORS(app)
 
 # create the jackson family object
-the_family = Family("Jackson")
+the_family = Family("Jordan")
 
 # Handle/serialize errors like a JSON object
 @app.errorhandler(APIException)
